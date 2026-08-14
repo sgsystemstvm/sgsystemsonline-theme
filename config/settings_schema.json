@@ -1,0 +1,10 @@
+[
+  {
+    "name": "SG Systems Branding",
+    "settings": [
+      {"type":"image_picker","id":"logo","label":"Store logo"},
+      {"type":"color","id":"brand_blue","label":"Brand blue","default":"#1260D8"},
+      {"type":"color","id":"brand_navy","label":"Brand navy","default":"#061A3A"}
+    ]
+  }
+]
