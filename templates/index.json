@@ -9,20 +9,6 @@
  */
 {
   "sections": {
-    "hero": {
-      "type": "sg-hero",
-      "settings": {
-        "badge": "NEW ARRIVALS",
-        "heading_1": "Smart Products.",
-        "heading_2": "Smart Prices.",
-        "text": "Discover innovative products that make your life better, every day.",
-        "image": "shopify://shop_images/ChatGPT_Image_Aug_14_2026_01_04_47_PM.png",
-        "primary_text": "SHOP NOW",
-        "primary_link": "",
-        "secondary_text": "EXPLORE COLLECTIONS",
-        "secondary_link": ""
-      }
-    },
     "categories": {
       "type": "sg-categories",
       "settings": {}
@@ -41,7 +27,6 @@
     }
   },
   "order": [
-    "hero",
     "categories",
     "trust",
     "products"
