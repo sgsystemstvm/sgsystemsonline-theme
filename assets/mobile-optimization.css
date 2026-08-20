@@ -1,0 +1,85 @@
+/* SG SYSTEMS ONLINE — mobile-first polish */
+@media (max-width: 640px) {
+  html, body { overflow-x: hidden; }
+  .sg-container { width: calc(100% - 24px); }
+
+  /* Compact top bar */
+  .sg-top { height: 40px; }
+  .sg-top .sg-container { justify-content: center; }
+  .sg-top-item { font-size: 10px; }
+  .sg-top-item:nth-child(2) { display: none; }
+
+  /* Header */
+  .sg-header .sg-container { padding: 10px 0 12px; gap: 10px; }
+  .sg-brand { justify-content: center; }
+  .sg-logo { max-width: min(210px, 70vw); max-height: 54px; }
+  .sg-actions { justify-content: center; gap: 22px; font-size: 13px; }
+  .sg-actions a > svg { width: 24px; height: 24px; }
+  .sg-cart-icon svg { width: 27px; height: 27px; }
+  .sg-search { width: 100%; height: 48px; border-radius: 12px; }
+  .sg-search input { font-size: 15px; padding: 0 14px; }
+  .sg-search button { width: 56px; }
+  .sg-search button svg { width: 23px; height: 23px; }
+
+  /* Mobile navigation */
+  .sg-nav { height: 48px; }
+  .sg-nav .sg-container { height: 48px; width: 100%; padding: 0 12px; gap: 18px; overflow-x: auto; scrollbar-width: none; }
+  .sg-nav .sg-container::-webkit-scrollbar { display: none; }
+  .sg-menu { font-size: 13px; flex: 0 0 auto; }
+  .sg-menu:before { font-size: 21px; margin-right: 8px; }
+  .sg-nav a { font-size: 13px; flex: 0 0 auto; }
+
+  /* Hero */
+  .sg-hero .sg-container { width: calc(100% - 24px); }
+  .sg-hero-copy { padding: 28px 0 14px; }
+  .sg-pill { height: 25px; padding: 0 12px; font-size: 11px; margin-bottom: 13px; }
+  .sg-hero h1 { font-size: clamp(34px, 10vw, 44px); line-height: 1.02; letter-spacing: -1.4px; margin-bottom: 14px; }
+  .sg-hero p { font-size: 15px; line-height: 1.45; margin-bottom: 14px; }
+  .sg-benefits { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin: 8px 0 18px; }
+  .sg-benefit { min-width: 0; padding-left: 32px; font-size: 11px; }
+  .sg-benefit strong { font-size: 12px; }
+  .sg-benefit:before { font-size: 22px; line-height: 26px; }
+  .sg-buttons { gap: 9px; }
+  .sg-btn { height: 48px; border-radius: 10px; font-size: 14px; padding: 0 18px; }
+  .sg-hero-art { height: 230px; min-height: 230px; }
+  .sg-hero-image { object-fit: cover; object-position: center; }
+
+  /* Category/trust strips */
+  .sg-strip { border-radius: 12px; }
+  .sg-category { min-height: 94px; padding: 12px 14px; gap: 13px; }
+  .sg-category-image { width: 70px; height: 70px; flex-basis: 70px; }
+  .sg-category strong { font-size: 14px; margin-bottom: 4px; white-space: normal; }
+  .sg-category a { font-size: 12px; }
+  .sg-trust { margin-bottom: 26px; }
+  .sg-trust-item { min-height: 86px; padding: 14px 16px; gap: 12px; }
+  .sg-icon { width: 44px; height: 44px; flex-basis: 44px; }
+  .sg-icon svg { width: 38px; height: 38px; }
+  .sg-trust strong { font-size: 13px; }
+  .sg-trust p { font-size: 11px; margin-top: 4px; }
+
+  /* Product sections */
+  .sg-section { padding: 8px 0 34px; }
+  .sg-section-head { margin-bottom: 13px; }
+  .sg-section h2 { font-size: 22px; }
+  .sg-view { font-size: 12px; }
+  .sg-products { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
+  .sg-card { border-radius: 11px; }
+  .sg-card-image { height: 145px; }
+  .sg-card-body { padding: 11px; }
+  .sg-card-title { font-size: 12px; line-height: 1.35; min-height: 34px; }
+  .sg-price { font-size: 15px; margin-top: 7px; }
+  .sg-old { font-size: 10px; margin-left: 3px; }
+  .sg-discount { font-size: 10px; margin-top: 3px; }
+
+  /* Footer */
+  .sg-footer { padding: 34px 0 28px; margin-top: 8px; }
+  .sg-footer-grid { grid-template-columns: 1fr; gap: 24px; }
+  .sg-footer h3 { font-size: 16px; }
+  .sg-footer p, .sg-footer a { font-size: 12px; }
+  .sg-payment-badge { min-height: 28px; }
+}
+
+@media (min-width: 641px) and (max-width: 1000px) {
+  .sg-products { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .sg-card-image { height: 190px; }
+}
