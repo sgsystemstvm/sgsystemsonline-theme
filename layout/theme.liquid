@@ -8,6 +8,7 @@
     {{ content_for_header }}
     {{ 'sg-theme.css' | asset_url | stylesheet_tag }}
     {{ 'sg-reference-overrides.css' | asset_url | stylesheet_tag }}
+    {{ 'mobile-optimization.css' | asset_url | stylesheet_tag }}
   </head>
   <body class="template-{{ template.name }}">
     {% section 'sg-announcement' %}
